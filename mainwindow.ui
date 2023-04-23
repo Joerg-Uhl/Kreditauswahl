@@ -1,0 +1,1511 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1963</width>
+    <height>1258</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="GraphicsLayoutWidget" name="graphWidget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>10</y>
+      <width>1111</width>
+      <height>1191</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+   </widget>
+   <widget class="QTabWidget" name="tabWidget_Kredite">
+    <property name="geometry">
+     <rect>
+      <x>1250</x>
+      <y>40</y>
+      <width>451</width>
+      <height>441</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <property name="documentMode">
+     <bool>false</bool>
+    </property>
+    <widget class="QWidget" name="Kredit1">
+     <attribute name="title">
+      <string>Kredit 1</string>
+     </attribute>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>10</y>
+        <width>421</width>
+        <height>400</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout">
+       <property name="leftMargin">
+        <number>5</number>
+       </property>
+       <item row="5" column="1">
+        <widget class="QSpinBox" name="spinBox_SonTilgRate1_1">
+         <property name="maximum">
+          <number>10000</number>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="0">
+        <widget class="QLabel" name="label_Dat_SonTilgRate1">
+         <property name="text">
+          <string>fällig am:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0">
+        <widget class="QLabel" name="label_Dat_2Zinssatz">
+         <property name="text">
+          <string>2. Zinssatz fällig ab:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QSpinBox" name="spinBox_Monatsrate_1">
+         <property name="minimum">
+          <number>100</number>
+         </property>
+         <property name="maximum">
+          <number>2000</number>
+         </property>
+         <property name="value">
+          <number>500</number>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="3">
+        <widget class="QSlider" name="horizontalSlider_Kreditbetrag">
+         <property name="minimum">
+          <number>1000</number>
+         </property>
+         <property name="maximum">
+          <number>500000</number>
+         </property>
+         <property name="sliderPosition">
+          <number>50000</number>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QSpinBox" name="spinBox_Kreditbetrag_1">
+         <property name="minimum">
+          <number>1000</number>
+         </property>
+         <property name="maximum">
+          <number>500000</number>
+         </property>
+         <property name="singleStep">
+          <number>1000</number>
+         </property>
+         <property name="value">
+          <number>50000</number>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="label_Zinssatz">
+         <property name="text">
+          <string>Zinssatz:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="0">
+        <widget class="QLabel" name="label_SonTilgRate2">
+         <property name="text">
+          <string>Sondertilgungsrate 2</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_Kreditbetrag">
+         <property name="text">
+          <string>Höhe des Kredits:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="0">
+        <widget class="QLabel" name="label_SonTilgRate1">
+         <property name="text">
+          <string>Sondertilgungsrate 1</string>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="1">
+        <widget class="QSpinBox" name="spinBox_SonTilgRate2_1">
+         <property name="maximum">
+          <number>10000</number>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="0">
+        <widget class="QLabel" name="label_Dat_SonTilgRate2">
+         <property name="text">
+          <string>fällig am:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_Monatsrate">
+         <property name="text">
+          <string>monatliche Rate:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="label_2Zinssatz">
+         <property name="text">
+          <string>2. Zinssatz:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="3">
+        <widget class="QSlider" name="horizontalSlider_Monatsrate">
+         <property name="minimum">
+          <number>100</number>
+         </property>
+         <property name="maximum">
+          <number>2000</number>
+         </property>
+         <property name="sliderPosition">
+          <number>500</number>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="3">
+        <widget class="QSlider" name="horizontalSlider_SonTilgRate1">
+         <property name="maximum">
+          <number>10000</number>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="3">
+        <widget class="QSlider" name="horizontalSlider_SonTilgRate2">
+         <property name="maximum">
+          <number>10000</number>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QDoubleSpinBox" name="doubleSpinBox_Zinssatz_1">
+         <property name="maximum">
+          <double>10.000000000000000</double>
+         </property>
+         <property name="singleStep">
+          <double>0.010000000000000</double>
+         </property>
+         <property name="value">
+          <double>0.000000000000000</double>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QDoubleSpinBox" name="doubleSpinBox_2Zinssatz_1">
+         <property name="maximum">
+          <double>10.000000000000000</double>
+         </property>
+         <property name="singleStep">
+          <double>0.010000000000000</double>
+         </property>
+         <property name="value">
+          <double>0.000000000000000</double>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="3">
+        <layout class="QFormLayout" name="formLayout">
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_Dat_2Zinssatz_Tag">
+           <property name="text">
+            <string>Tag</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLineEdit" name="lineEdit_2Zinssatz_Tag"/>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_Dat_2Zinssatz_Monat">
+           <property name="text">
+            <string>Monat</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLineEdit" name="lineEdit_2Zinssatz_Monat"/>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="label_Dat_2Zinssatz_Jahr">
+           <property name="text">
+            <string>Jahr</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLineEdit" name="lineEdit_2Zinssatz_Jahr"/>
+         </item>
+        </layout>
+       </item>
+       <item row="6" column="3">
+        <layout class="QFormLayout" name="formLayout_2">
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_Dat_SonTilgRate1_Tag">
+           <property name="text">
+            <string>Tag</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLineEdit" name="lineEdit_SonTilgRate1_Tag"/>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_Dat_SonTilgRate1_Monat">
+           <property name="text">
+            <string>Monat</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLineEdit" name="lineEdit_SonTilgRate1_Monat"/>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="label_Dat_SonTilgRate1_Jahr">
+           <property name="text">
+            <string>Jahr</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLineEdit" name="lineEdit_SonTilgRate1_Jahr"/>
+         </item>
+        </layout>
+       </item>
+       <item row="8" column="3">
+        <layout class="QFormLayout" name="formLayout_3">
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_Dat_SonTilgRate2_Tag">
+           <property name="text">
+            <string>Tag</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLineEdit" name="lineEdit_SonTilgRate2_Tag"/>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_Dat_SonTilgRate2_Monat">
+           <property name="text">
+            <string>Monat</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLineEdit" name="lineEdit_SonTilgRate2_Monat"/>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="label_Dat_SonTilgRate2_Jahr">
+           <property name="text">
+            <string>Jahr</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLineEdit" name="lineEdit_SonTilgRate2_Jahr"/>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="Kredit2">
+     <attribute name="title">
+      <string>Kredit 2</string>
+     </attribute>
+     <widget class="QWidget" name="layoutWidget_2">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>10</y>
+        <width>421</width>
+        <height>400</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <property name="leftMargin">
+        <number>5</number>
+       </property>
+       <item row="5" column="1">
+        <widget class="QSpinBox" name="spinBox_SonTilgRate1_2">
+         <property name="maximum">
+          <number>10000</number>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="0">
+        <widget class="QLabel" name="label_Dat_SonTilgRate1_2">
+         <property name="text">
+          <string>fällig am:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0">
+        <widget class="QLabel" name="label_Dat_2Zinssatz_2">
+         <property name="text">
+          <string>2. Zinssatz fällig ab:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QSpinBox" name="spinBox_Monatsrate_2">
+         <property name="minimum">
+          <number>100</number>
+         </property>
+         <property name="maximum">
+          <number>2000</number>
+         </property>
+         <property name="value">
+          <number>500</number>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="3">
+        <widget class="QSlider" name="horizontalSlider_Kreditbetrag_2">
+         <property name="minimum">
+          <number>1000</number>
+         </property>
+         <property name="maximum">
+          <number>500000</number>
+         </property>
+         <property name="sliderPosition">
+          <number>50000</number>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QSpinBox" name="spinBox_Kreditbetrag_2">
+         <property name="minimum">
+          <number>1000</number>
+         </property>
+         <property name="maximum">
+          <number>500000</number>
+         </property>
+         <property name="singleStep">
+          <number>1000</number>
+         </property>
+         <property name="value">
+          <number>50000</number>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="label_Zinssatz_2">
+         <property name="text">
+          <string>Zinssatz:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="0">
+        <widget class="QLabel" name="label_SonTilgRate2_2">
+         <property name="text">
+          <string>Sondertilgungsrate 2</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_Kreditbetrag_2">
+         <property name="text">
+          <string>Höhe des Kredits:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="0">
+        <widget class="QLabel" name="label_SonTilgRate1_2">
+         <property name="text">
+          <string>Sondertilgungsrate 1</string>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="1">
+        <widget class="QSpinBox" name="spinBox_SonTilgRate2_2">
+         <property name="maximum">
+          <number>10000</number>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="0">
+        <widget class="QLabel" name="label_Dat_SonTilgRate2_2">
+         <property name="text">
+          <string>fällig am:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_Monatsrate_2">
+         <property name="text">
+          <string>monatliche Rate:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="label_2Zinssatz_2">
+         <property name="text">
+          <string>2. Zinssatz:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="3">
+        <widget class="QSlider" name="horizontalSlider_Monatsrate_2">
+         <property name="minimum">
+          <number>100</number>
+         </property>
+         <property name="maximum">
+          <number>2000</number>
+         </property>
+         <property name="sliderPosition">
+          <number>500</number>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="3">
+        <widget class="QSlider" name="horizontalSlider_SonTilgRate1_2">
+         <property name="maximum">
+          <number>10000</number>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="3">
+        <widget class="QSlider" name="horizontalSlider_SonTilgRate2_2">
+         <property name="maximum">
+          <number>10000</number>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QDoubleSpinBox" name="doubleSpinBox_Zinssatz_2">
+         <property name="maximum">
+          <double>10.000000000000000</double>
+         </property>
+         <property name="singleStep">
+          <double>0.010000000000000</double>
+         </property>
+         <property name="value">
+          <double>0.000000000000000</double>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QDoubleSpinBox" name="doubleSpinBox_2Zinssatz_2">
+         <property name="maximum">
+          <double>10.000000000000000</double>
+         </property>
+         <property name="singleStep">
+          <double>0.010000000000000</double>
+         </property>
+         <property name="value">
+          <double>0.000000000000000</double>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="3">
+        <layout class="QFormLayout" name="formLayout_4">
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_Dat_2Zinssatz_Tag_2">
+           <property name="text">
+            <string>Tag</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLineEdit" name="lineEdit_2Zinssatz_Tag_2"/>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_Dat_2Zinssatz_Monat_2">
+           <property name="text">
+            <string>Monat</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLineEdit" name="lineEdit_2Zinssatz_Monat_2"/>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="label_Dat_2Zinssatz_Jahr_2">
+           <property name="text">
+            <string>Jahr</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLineEdit" name="lineEdit_2Zinssatz_Jahr_2"/>
+         </item>
+        </layout>
+       </item>
+       <item row="6" column="3">
+        <layout class="QFormLayout" name="formLayout_5">
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_Dat_SonTilgRate1_Tag_2">
+           <property name="text">
+            <string>Tag</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLineEdit" name="lineEdit_SonTilgRate1_Tag_2"/>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_Dat_SonTilgRate1_Monat_2">
+           <property name="text">
+            <string>Monat</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLineEdit" name="lineEdit_SonTilgRate1_Monat_2"/>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="label_Dat_SonTilgRate1_Jahr_2">
+           <property name="text">
+            <string>Jahr</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLineEdit" name="lineEdit_SonTilgRate1_Jahr_2"/>
+         </item>
+        </layout>
+       </item>
+       <item row="8" column="3">
+        <layout class="QFormLayout" name="formLayout_6">
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_Dat_SonTilgRate2_Tag_2">
+           <property name="text">
+            <string>Tag</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLineEdit" name="lineEdit_SonTilgRate2_Tag_2"/>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_Dat_SonTilgRate2_Monat_2">
+           <property name="text">
+            <string>Monat</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLineEdit" name="lineEdit_SonTilgRate2_Monat_2"/>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="label_Dat_SonTilgRate2_Jahr_2">
+           <property name="text">
+            <string>Jahr</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLineEdit" name="lineEdit_SonTilgRate2_Jahr_2"/>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="Kredit3">
+     <attribute name="title">
+      <string>Kredit 3</string>
+     </attribute>
+     <widget class="QWidget" name="layoutWidget_3">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>10</y>
+        <width>421</width>
+        <height>400</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_3">
+       <property name="leftMargin">
+        <number>5</number>
+       </property>
+       <item row="5" column="1">
+        <widget class="QSpinBox" name="spinBox_SonTilgRate1_3">
+         <property name="maximum">
+          <number>10000</number>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="0">
+        <widget class="QLabel" name="label_Dat_SonTilgRate1_3">
+         <property name="text">
+          <string>fällig am:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0">
+        <widget class="QLabel" name="label_Dat_2Zinssatz_3">
+         <property name="text">
+          <string>2. Zinssatz fällig ab:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QSpinBox" name="spinBox_Monatsrate_3">
+         <property name="minimum">
+          <number>100</number>
+         </property>
+         <property name="maximum">
+          <number>2000</number>
+         </property>
+         <property name="value">
+          <number>500</number>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="3">
+        <widget class="QSlider" name="horizontalSlider_Kreditbetrag_3">
+         <property name="minimum">
+          <number>1000</number>
+         </property>
+         <property name="maximum">
+          <number>500000</number>
+         </property>
+         <property name="sliderPosition">
+          <number>50000</number>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QSpinBox" name="spinBox_Kreditbetrag_3">
+         <property name="minimum">
+          <number>1000</number>
+         </property>
+         <property name="maximum">
+          <number>500000</number>
+         </property>
+         <property name="singleStep">
+          <number>1000</number>
+         </property>
+         <property name="value">
+          <number>50000</number>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="label_Zinssatz_3">
+         <property name="text">
+          <string>Zinssatz:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="0">
+        <widget class="QLabel" name="label_SonTilgRate2_3">
+         <property name="text">
+          <string>Sondertilgungsrate 2</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_Kreditbetrag_3">
+         <property name="text">
+          <string>Höhe des Kredits:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="0">
+        <widget class="QLabel" name="label_SonTilgRate1_3">
+         <property name="text">
+          <string>Sondertilgungsrate 1</string>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="1">
+        <widget class="QSpinBox" name="spinBox_SonTilgRate2_3">
+         <property name="maximum">
+          <number>10000</number>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="0">
+        <widget class="QLabel" name="label_Dat_SonTilgRate2_3">
+         <property name="text">
+          <string>fällig am:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_Monatsrate_3">
+         <property name="text">
+          <string>monatliche Rate:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="label_2Zinssatz_3">
+         <property name="text">
+          <string>2. Zinssatz:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="3">
+        <widget class="QSlider" name="horizontalSlider_Monatsrate_3">
+         <property name="minimum">
+          <number>100</number>
+         </property>
+         <property name="maximum">
+          <number>2000</number>
+         </property>
+         <property name="sliderPosition">
+          <number>500</number>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="3">
+        <widget class="QSlider" name="horizontalSlider_SonTilgRate1_3">
+         <property name="maximum">
+          <number>10000</number>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="3">
+        <widget class="QSlider" name="horizontalSlider_SonTilgRate2_3">
+         <property name="maximum">
+          <number>10000</number>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QDoubleSpinBox" name="doubleSpinBox_Zinssatz_3">
+         <property name="maximum">
+          <double>10.000000000000000</double>
+         </property>
+         <property name="singleStep">
+          <double>0.010000000000000</double>
+         </property>
+         <property name="value">
+          <double>0.000000000000000</double>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QDoubleSpinBox" name="doubleSpinBox_2Zinssatz_3">
+         <property name="maximum">
+          <double>10.000000000000000</double>
+         </property>
+         <property name="singleStep">
+          <double>0.010000000000000</double>
+         </property>
+         <property name="value">
+          <double>0.000000000000000</double>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="3">
+        <layout class="QFormLayout" name="formLayout_7">
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_Dat_2Zinssatz_Tag_3">
+           <property name="text">
+            <string>Tag</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLineEdit" name="lineEdit_2Zinssatz_Tag_3"/>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_Dat_2Zinssatz_Monat_3">
+           <property name="text">
+            <string>Monat</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLineEdit" name="lineEdit_2Zinssatz_Monat_3"/>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="label_Dat_2Zinssatz_Jahr_3">
+           <property name="text">
+            <string>Jahr</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLineEdit" name="lineEdit_2Zinssatz_Jahr_3"/>
+         </item>
+        </layout>
+       </item>
+       <item row="6" column="3">
+        <layout class="QFormLayout" name="formLayout_8">
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_Dat_SonTilgRate1_Tag_3">
+           <property name="text">
+            <string>Tag</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLineEdit" name="lineEdit_SonTilgRate1_Tag_3"/>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_Dat_SonTilgRate1_Monat_3">
+           <property name="text">
+            <string>Monat</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLineEdit" name="lineEdit_SonTilgRate1_Monat_3"/>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="label_Dat_SonTilgRate1_Jahr_3">
+           <property name="text">
+            <string>Jahr</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLineEdit" name="lineEdit_SonTilgRate1_Jahr_3"/>
+         </item>
+        </layout>
+       </item>
+       <item row="8" column="3">
+        <layout class="QFormLayout" name="formLayout_9">
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_Dat_SonTilgRate2_Tag_3">
+           <property name="text">
+            <string>Tag</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLineEdit" name="lineEdit_SonTilgRate2_Tag_3"/>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_Dat_SonTilgRate2_Monat_3">
+           <property name="text">
+            <string>Monat</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLineEdit" name="lineEdit_SonTilgRate2_Monat_3"/>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="label_Dat_SonTilgRate2_Jahr_3">
+           <property name="text">
+            <string>Jahr</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLineEdit" name="lineEdit_SonTilgRate2_Jahr_3"/>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QTabWidget" name="tabWidget_Tabellen">
+    <property name="geometry">
+     <rect>
+      <x>1250</x>
+      <y>580</y>
+      <width>631</width>
+      <height>621</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>Tabelle 1</string>
+     </attribute>
+     <widget class="TableWidget" name="tableWidget_Kredit_1">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>611</width>
+        <height>561</height>
+       </rect>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>Tabelle 2</string>
+     </attribute>
+     <widget class="TableWidget" name="tableWidget_Kredit_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>611</width>
+        <height>381</height>
+       </rect>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_3">
+     <attribute name="title">
+      <string>Tabelle 3</string>
+     </attribute>
+     <widget class="TableWidget" name="tableWidget_Kredit_3">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>611</width>
+        <height>381</height>
+       </rect>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1963</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>GraphicsLayoutWidget</class>
+   <extends>QWidget</extends>
+   <header>pyqtgraph</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>TableWidget</class>
+   <extends>QTableWidget</extends>
+   <header>pyqtgraph</header>
+  </customwidget>
+ </customwidgets>
+ <tabstops>
+  <tabstop>tabWidget_Kredite</tabstop>
+  <tabstop>spinBox_Kreditbetrag_1</tabstop>
+  <tabstop>horizontalSlider_Kreditbetrag</tabstop>
+  <tabstop>spinBox_Monatsrate_1</tabstop>
+  <tabstop>horizontalSlider_Monatsrate</tabstop>
+  <tabstop>doubleSpinBox_Zinssatz_1</tabstop>
+  <tabstop>doubleSpinBox_2Zinssatz_1</tabstop>
+  <tabstop>lineEdit_2Zinssatz_Tag</tabstop>
+  <tabstop>lineEdit_2Zinssatz_Monat</tabstop>
+  <tabstop>lineEdit_2Zinssatz_Jahr</tabstop>
+  <tabstop>spinBox_SonTilgRate1_1</tabstop>
+  <tabstop>horizontalSlider_SonTilgRate1</tabstop>
+  <tabstop>lineEdit_SonTilgRate1_Tag</tabstop>
+  <tabstop>lineEdit_SonTilgRate1_Monat</tabstop>
+  <tabstop>lineEdit_SonTilgRate1_Jahr</tabstop>
+  <tabstop>spinBox_SonTilgRate2_1</tabstop>
+  <tabstop>horizontalSlider_SonTilgRate2</tabstop>
+  <tabstop>lineEdit_SonTilgRate2_Tag</tabstop>
+  <tabstop>lineEdit_SonTilgRate2_Monat</tabstop>
+  <tabstop>lineEdit_SonTilgRate2_Jahr</tabstop>
+  <tabstop>tableWidget_Kredit_3</tabstop>
+  <tabstop>tabWidget_Tabellen</tabstop>
+  <tabstop>tableWidget_Kredit_1</tabstop>
+  <tabstop>tableWidget_Kredit_2</tabstop>
+  <tabstop>spinBox_SonTilgRate1_2</tabstop>
+  <tabstop>spinBox_Monatsrate_2</tabstop>
+  <tabstop>horizontalSlider_Kreditbetrag_2</tabstop>
+  <tabstop>spinBox_Kreditbetrag_2</tabstop>
+  <tabstop>spinBox_SonTilgRate2_2</tabstop>
+  <tabstop>horizontalSlider_Monatsrate_2</tabstop>
+  <tabstop>horizontalSlider_SonTilgRate1_2</tabstop>
+  <tabstop>horizontalSlider_SonTilgRate2_2</tabstop>
+  <tabstop>doubleSpinBox_Zinssatz_2</tabstop>
+  <tabstop>doubleSpinBox_2Zinssatz_2</tabstop>
+  <tabstop>lineEdit_2Zinssatz_Tag_2</tabstop>
+  <tabstop>lineEdit_2Zinssatz_Monat_2</tabstop>
+  <tabstop>lineEdit_2Zinssatz_Jahr_2</tabstop>
+  <tabstop>lineEdit_SonTilgRate1_Tag_2</tabstop>
+  <tabstop>lineEdit_SonTilgRate1_Monat_2</tabstop>
+  <tabstop>lineEdit_SonTilgRate1_Jahr_2</tabstop>
+  <tabstop>lineEdit_SonTilgRate2_Tag_2</tabstop>
+  <tabstop>lineEdit_SonTilgRate2_Monat_2</tabstop>
+  <tabstop>lineEdit_SonTilgRate2_Jahr_2</tabstop>
+  <tabstop>spinBox_SonTilgRate1_3</tabstop>
+  <tabstop>spinBox_Monatsrate_3</tabstop>
+  <tabstop>horizontalSlider_Kreditbetrag_3</tabstop>
+  <tabstop>spinBox_Kreditbetrag_3</tabstop>
+  <tabstop>spinBox_SonTilgRate2_3</tabstop>
+  <tabstop>horizontalSlider_Monatsrate_3</tabstop>
+  <tabstop>horizontalSlider_SonTilgRate1_3</tabstop>
+  <tabstop>horizontalSlider_SonTilgRate2_3</tabstop>
+  <tabstop>doubleSpinBox_Zinssatz_3</tabstop>
+  <tabstop>doubleSpinBox_2Zinssatz_3</tabstop>
+  <tabstop>lineEdit_2Zinssatz_Tag_3</tabstop>
+  <tabstop>lineEdit_2Zinssatz_Monat_3</tabstop>
+  <tabstop>lineEdit_2Zinssatz_Jahr_3</tabstop>
+  <tabstop>lineEdit_SonTilgRate1_Tag_3</tabstop>
+  <tabstop>lineEdit_SonTilgRate1_Monat_3</tabstop>
+  <tabstop>lineEdit_SonTilgRate1_Jahr_3</tabstop>
+  <tabstop>lineEdit_SonTilgRate2_Tag_3</tabstop>
+  <tabstop>lineEdit_SonTilgRate2_Monat_3</tabstop>
+  <tabstop>lineEdit_SonTilgRate2_Jahr_3</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>horizontalSlider_Kreditbetrag</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>spinBox_Kreditbetrag_1</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1507</x>
+     <y>103</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1424</x>
+     <y>109</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>spinBox_Kreditbetrag_1</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>horizontalSlider_Kreditbetrag</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1415</x>
+     <y>100</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1599</x>
+     <y>103</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalSlider_Monatsrate</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>spinBox_Monatsrate_1</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1490</x>
+     <y>133</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1433</x>
+     <y>134</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>spinBox_Monatsrate_1</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>horizontalSlider_Monatsrate</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1391</x>
+     <y>142</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1591</x>
+     <y>140</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalSlider_SonTilgRate1</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>spinBox_SonTilgRate1_1</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1660</x>
+     <y>303</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1439</x>
+     <y>302</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>spinBox_SonTilgRate1_1</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>horizontalSlider_SonTilgRate1</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1439</x>
+     <y>302</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1691</x>
+     <y>303</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalSlider_SonTilgRate2</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>spinBox_SonTilgRate2_1</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1664</x>
+     <y>411</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1439</x>
+     <y>410</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>spinBox_SonTilgRate2_1</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>horizontalSlider_SonTilgRate2</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1439</x>
+     <y>410</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1691</x>
+     <y>411</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalSlider_Kreditbetrag_2</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>spinBox_Kreditbetrag_2</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1473</x>
+     <y>107</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1410</x>
+     <y>110</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>spinBox_Kreditbetrag_2</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>horizontalSlider_Kreditbetrag_2</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1403</x>
+     <y>98</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1571</x>
+     <y>109</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalSlider_Monatsrate_2</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>spinBox_Monatsrate_2</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1534</x>
+     <y>131</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1416</x>
+     <y>134</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>spinBox_Monatsrate_2</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>horizontalSlider_Monatsrate_2</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1401</x>
+     <y>126</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1590</x>
+     <y>130</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalSlider_SonTilgRate1_2</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>spinBox_SonTilgRate1_2</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1495</x>
+     <y>289</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1408</x>
+     <y>293</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>spinBox_SonTilgRate1_2</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>horizontalSlider_SonTilgRate1_2</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1406</x>
+     <y>285</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1557</x>
+     <y>298</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalSlider_SonTilgRate2_2</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>spinBox_SonTilgRate2_2</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1492</x>
+     <y>398</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1427</x>
+     <y>400</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>spinBox_SonTilgRate2_2</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>horizontalSlider_SonTilgRate2_2</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1406</x>
+     <y>409</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1572</x>
+     <y>403</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalSlider_Kreditbetrag_3</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>spinBox_Kreditbetrag_3</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1493</x>
+     <y>99</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1412</x>
+     <y>104</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>spinBox_Kreditbetrag_3</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>horizontalSlider_Kreditbetrag_3</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1404</x>
+     <y>113</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1578</x>
+     <y>106</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalSlider_Monatsrate_3</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>spinBox_Monatsrate_3</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1492</x>
+     <y>130</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1414</x>
+     <y>129</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>spinBox_Monatsrate_3</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>horizontalSlider_Monatsrate_3</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1415</x>
+     <y>140</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1546</x>
+     <y>138</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalSlider_SonTilgRate1_3</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>spinBox_SonTilgRate1_3</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1472</x>
+     <y>290</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1427</x>
+     <y>295</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>spinBox_SonTilgRate1_3</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>horizontalSlider_SonTilgRate1_3</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1413</x>
+     <y>284</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1550</x>
+     <y>294</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalSlider_SonTilgRate2_3</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>spinBox_SonTilgRate2_3</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1464</x>
+     <y>397</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1418</x>
+     <y>397</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>spinBox_SonTilgRate2_3</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>horizontalSlider_SonTilgRate2_3</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1415</x>
+     <y>406</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1554</x>
+     <y>406</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
